@@ -5,7 +5,6 @@ import Home from './components/Home';
 
 function App() {
   const test = localStorage.getItem('login')
-  console.log(test)
   return (
     <Router>
       <Routes>
