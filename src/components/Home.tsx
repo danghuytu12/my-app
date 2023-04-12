@@ -7,7 +7,7 @@ const Home = () => {
   const navigate = useNavigate()
   const handleOnClick = () => {
     localStorage.removeItem('login')
-    navigate("/login")
+    navigate("/")
   }
   useEffect(() => {
     fetch(`${process.env.NEXT_API}/todos/1`)
