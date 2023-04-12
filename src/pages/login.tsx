@@ -5,6 +5,7 @@ const Login = () => {
     const navigate = useNavigate()
     const handleOnClick = () => {
         localStorage.setItem('login', true as any)
+        navigate("/")
     }
   return (
     <div>
