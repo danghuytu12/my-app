@@ -11,11 +11,9 @@ import Test from "./components/Test";
 import Login from "./pages/login";
 import Private from "./pages/Private";
 import Provider from "./context/Provider";
-export const BASE_URL = process.env.NEXT_API;
 
 function App() {
   const test = localStorage.getItem("login");
-  console.log(BASE_URL);
 
   return (
     <Provider>

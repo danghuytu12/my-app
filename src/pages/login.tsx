@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
     const navigate = useNavigate()
+    const history = useNavigate()
     const handleOnClick = () => {
         localStorage.setItem('login', true as any)
+        history("/")
     }
-
-    const history = useNavigate()
 
     useEffect(() => {
         if(localStorage.getItem('login')){
