@@ -46,7 +46,7 @@ const Home = () => {
       <div style={{ marginTop: 200 }}><SubTitleDescriptionHtml textHtml={name} className='font-normal overflow-hidden' /></div>
       <button onClick={handleSubmit(onSubmit)}>Click</button>
 
-      <div>Todo: {todo.title}</div>
+      <div>Todo: {todo ? todo.title : ''}</div>
     </div>
   )
 }
