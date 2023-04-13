@@ -7,7 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import axios from 'axios';
 
-// export const NEXT_API=process.env.NEXT_API
+export const NEXT_API=process.env.REACT_APP_API_PUBLIC
 
 const Home = () => {
   // const navigate = useNavigate()
@@ -19,7 +19,7 @@ const Home = () => {
   useEffect(() => {
     // fetch(`${process.env.REACT_APP_API_PUBLIC}/todos/1`)
     //   .then((res: any) => {console.log(res)})
-    axios.get(`${process.env.REACT_APP_API_PUBLIC}/todos/1`).then((res) => setTodo(res.data)
+    axios.get(`${NEXT_API}/todos/1`).then((res) => setTodo(res.data)
     )
   }, [])
 
