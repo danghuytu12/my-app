@@ -38,8 +38,6 @@ const Home = () => {
     console.log(data)
     setText(data.name)
   }
-  console.log(process.env.REACT_APP_API_PUBLIC);
-
 
   return (
     <div>
