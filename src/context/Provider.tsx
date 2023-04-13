@@ -8,7 +8,7 @@ const Provider = (props: any) => {
     { id: 2, name: "Tidying up", completed: false }
   ]);
 
-  const toggleTodo = (id: any) => {
+  const toggleTodo = (id: string | number) => {
     const modifiedTodos = todos.map((todo) => {
       if (id === todo.id) {
         return {
@@ -25,7 +25,7 @@ const Provider = (props: any) => {
     <Context.Provider
       value={{
         todos,
-        toggleTodo: (id: any) => toggleTodo(id)
+        toggleTodo: (id: string | number) => toggleTodo(id)
       }}
     >
       {props.children}
